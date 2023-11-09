@@ -44,7 +44,11 @@ $S(n)=O(log(n))$
 
 a. Let's say their money system has coins that are equal to $1, $4, and $5. Now let's say we have $8. The greedy choice would be to take a $5 coin followed by 3 $1 coins. However, the optimal choice would be to take 2 $4 coins. In this case, the greedy algorithm would not work since the best choice at each individual point is not necessarily the best choice in the long run.
 
-b.
+b. The number of coins written as a function of USD will be written as $C(D)$. $k_n$ will still refer to the n-th denomination. The optimal substructure would be given by:
+
+$C(D)=min(C(i-k_n)+1)$
+
+In the same way as before, no coin can be chosen with a greater value than D.
 
 c.
 
