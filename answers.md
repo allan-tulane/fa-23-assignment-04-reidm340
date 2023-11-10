@@ -46,11 +46,15 @@ a. Let's say their money system has coins that are equal to $1, $4, and $5. Now 
 
 b. The number of coins written as a function of USD will be written as $C(D)$. $k_n$ will still refer to the n-th denomination. The optimal substructure would be given by:
 
-$C(D)=min(C(i-k_n)+1)$
+$C(D)=min(C(D-k_n)+1)$
 
 In the same way as before, no coin can be chosen with a greater value than D.
 
 c.
+
+$W(n)=O(nk)$
+
+$S(n)=O(n)$
 
 
 3. 
